@@ -1,0 +1,48 @@
+<!-- funciones/menu_principal.html -->
+<link rel="stylesheet" href="css/theme-carsense.css">
+
+<style>
+  /* Refuerzo para que el menú se vea bien aunque haya CSS viejo */
+  .cs-navbar{
+    width:100%;
+    background:linear-gradient(90deg,#2563eb,#1d4ed8);
+    color:#fff;
+    padding:12px 20px;
+    display:flex;align-items:center;gap:16px;
+    box-shadow:0 6px 18px rgba(2,8,23,.12);
+  }
+  .cs-navbar .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px;text-transform:uppercase}
+  .cs-navbar .brand span{color:#fff;font-size:20px}
+  .cs-navbar nav{margin-left:auto;display:flex;gap:18px}
+  .cs-navbar nav a{color:#fff !important;text-decoration:none !important;font-weight:600;opacity:.95}
+  .cs-navbar nav a:hover{opacity:1;text-decoration:underline !important}
+</style>
+
+<header class="cs-navbar">
+  <div class="brand">
+    <span>CarSense</span>
+  </div>
+  <nav>
+    <a href="index.php">Inicio</a>
+    <a href="clientes_productos.php">Artículos</a>
+    <a href="curiosidades.php">Datos interesantes</a>
+    <a href="contacto.php">Conócenos</a>
+    <a href="login.php">Iniciar sesión</a>
+  </nav>
+</header>
+
+<!-- Widget de Dialogflow -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  location="us-central1"
+  project-id="mivo-404415"
+  agent-id="8b569a91-2f1c-48f6-bf1d-53aca6c071c9"
+  language-code="es"
+  session-ttl="100">
+  <df-messenger-chat-bubble
+    chat-title="MIVO"
+    chat-subtitle="Tu asistente virtual"
+    placeholder-text="Pregúntale a MIVO"
+    chat-title-icon="https://cdn-icons-png.flaticon.com/256/6549/6549177.png">
+  </df-messenger-chat-bubble>
+</df-messenger>

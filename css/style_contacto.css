@@ -1,0 +1,59 @@
+body{
+    background-image: url(../imagenes/fondo10.jpg);
+    background-origin: content-box;
+    padding: 30px;
+    background-size: cover;
+} 
+
+.titulo {
+    font-family:'Times New Roman', Times, serif; 
+    text-align: center;
+    font-size: 32px;
+    color: black;
+}
+
+.texto {
+    padding: 10px;
+    margin-top:100px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+}
+
+
+.conten {
+    
+    width: 100%;
+    height: 450px;
+}
+
+.colum1{
+    text-align: justify;
+    background-color: #555050da;
+    width: 32%;
+    height: 440px;
+    border-radius: 10px;
+    float: left;
+    margin: 5px;
+}
+
+.colum2{
+    text-align: center;
+    background-color: #b94040bb;
+    width: 32%;
+    height: 440px;
+    border-radius: 10px;
+    float: left;
+    margin: 5px;
+}
+
+.colum3{
+    background-color: #67865fa9;
+    width: 32%;
+    height: 440px;
+    border-radius: 10px;
+    float: left;
+    margin: 5px;
+    
+}

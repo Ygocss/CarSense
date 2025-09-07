@@ -1,0 +1,137 @@
+/* ===== CarSense Theme (solo interfaz) ===== */
+
+/* Paleta */
+:root{
+  --cs-primary:#2563eb;      /* azul elegante */
+  --cs-primary-600:#1d4ed8;
+  --cs-accent:#22c55e;       /* verde acción */
+  --cs-bg1:#eef2ff;          /* lila muy claro */
+  --cs-bg2:#e0f2fe;          /* azul cielo claro */
+  --cs-text:#0f172a;         /* gris muy oscuro */
+  --cs-muted:#64748b;        /* secundario */
+  --cs-card:#ffffff;
+  --cs-border:#e2e8f0;
+}
+
+/* Fondo (quitamos ruido del fondo anterior) */
+html,body{
+  height:100%;
+  background:
+    radial-gradient(1200px 700px at 10% 10%, var(--cs-bg1), transparent 60%),
+    radial-gradient(1000px 600px at 90% 20%, var(--cs-bg2), transparent 50%),
+    linear-gradient(180deg, #ffffff, #f8fafc 60%, #f1f5f9);
+  background-attachment: fixed !important;
+  color:var(--cs-text);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Contenedor y card genéricos */
+.cs-container{max-width:1100px;margin:28px auto;padding:0 16px}
+.cs-card{
+  background:var(--cs-card);
+  border:1px solid var(--cs-border);
+  border-radius:16px;
+  padding:22px;
+  box-shadow:0 10px 30px rgba(2,8,23,.08);
+}
+
+/* Tarjeta centrada para login */
+.cs-auth-wrapper{min-height: calc(100vh - 120px); display:flex; align-items:center;}
+.cs-auth-card{max-width:520px;margin:24px auto;}
+.cs-brand-lockup{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.cs-brand-lockup img{height:34px;width:auto;display:block}
+
+/* Formularios */
+.cs-form label{font-size:.95rem;color:var(--cs-muted);margin:8px 0 6px;display:block}
+.cs-form input[type=email],
+.cs-form input[type=password],
+.cs-form input[type=text],
+.cs-form select, .cs-form textarea{
+  width:100%;
+  padding:12px 14px;
+  border:1px solid var(--cs-border);
+  border-radius:12px;
+  background:#fff;
+  outline:none;
+  transition:border-color .15s ease, box-shadow .15s ease, transform .05s ease;
+}
+.cs-form input:focus, .cs-form select:focus, .cs-form textarea:focus{
+  border-color:var(--cs-primary);
+  box-shadow:0 0 0 3px rgba(37, 99, 235, .18);
+}
+
+/* Botones elegantes */
+.cs-btn{
+  display:inline-block;
+  border:0; border-radius:12px;
+  padding:11px 16px;
+  background:linear-gradient(135deg, var(--cs-primary), var(--cs-primary-600));
+  color:#fff; font-weight:650; letter-spacing:.2px;
+  cursor:pointer;
+  box-shadow:0 10px 20px rgba(37,99,235,.25);
+  transition:transform .08s ease, box-shadow .2s ease, opacity .15s ease;
+}
+.cs-btn:hover{ transform:translateY(-1px); box-shadow:0 14px 28px rgba(37,99,235,.3); }
+.cs-btn:active{ transform:translateY(0); box-shadow:0 8px 18px rgba(37,99,235,.25); }
+.cs-btn[disabled]{ opacity:.7; cursor:not-allowed; }
+
+.cs-btn.secondary{
+  background:#f1f5f9; color:#0f172a;
+  box-shadow:none;
+}
+.cs-btn.secondary:hover{ box-shadow:0 4px 14px rgba(2,8,23,.1); }
+
+a.registro{
+  text-decoration:none; font-weight:600;
+  color:var(--cs-primary);
+}
+a.registro:hover{ text-decoration:underline; }
+
+/* Alertas */
+.cs-alert{padding:12px 14px;border-radius:10px;border:1px solid var(--cs-border);background:#fff}
+.cs-alert.info{border-color:#93c5fd;background:#eff6ff}
+.cs-alert.error{border-color:#fecaca;background:#fef2f2}
+
+/* Quitar estilos viejos que ponían “ruido” de fondo */
+body, .form_box, .wrapper, .fondo, .main_bg {
+  background-image: none !important;
+}
+/* ===== Footer fijo elegante ===== */
+body{ padding-bottom:88px; } /* evita que el footer tape el contenido */
+
+.cs-footer-fixed{
+  position: fixed; left:0; right:0; bottom:0;
+  background:#0b1220; color:#cbd5e1;
+  border-top:1px solid #0ea5b4;
+  box-shadow:0 -6px 18px rgba(2,8,23,.12);
+  z-index: 50;
+}
+
+.cs-footer-inner{
+  max-width:1100px; margin:0 auto;
+  padding:14px 16px;
+  display:flex; flex-wrap:wrap;
+  gap:12px; justify-content:space-between; align-items:center;
+}
+
+.cs-footer-fixed a{ color:#93c5fd; text-decoration:none; }
+.cs-footer-fixed a:hover{ text-decoration:underline; }
+/* Fix: eliminar espacios en blanco arriba */
+html, body { margin: 0 !important; padding: 0; }
+header, .cs-navbar { margin: 0 !important; }
+/* --- Fix separación grande arriba de la portada --- */
+html, body { margin:0 !important; padding:0 !important; }
+header, .cs-navbar { margin:0 !important; }
+
+/* quita cualquier margen o padding inesperado del 1er bloque después del header */
+body > header + section:first-of-type {
+  margin-top: 0 !important;
+  padding-top: 16px !important; /* deja un respiro mínimo */
+}
+
+/* por si el 1er hijo no es section */
+body > header + *:first-child {
+  margin-top: 0 !important;
+  padding-top: 16px !important;
+}
+

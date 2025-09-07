@@ -1,0 +1,36 @@
+
+body {
+	background-image: url(../imagenes/fondo10.jpg);
+    background-origin: content-box;
+    padding: 30px;
+    background-size: cover;
+}
+
+.titulo {
+    text-align: center;
+     color:black;
+    font-size: 32px;
+}
+
+.producto {
+	width: 50%;
+    height: 50%;
+    padding: 5px;
+    margin: 0px auto;
+}
+
+.producto_imagen {
+	border-radius: 20px;
+	width: 256px;
+    height: 256px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 8px;
+    float: left;
+}
+.detalles{
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+     color: black;
+}

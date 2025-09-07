@@ -1,0 +1,117 @@
+body.html {
+	height: 100%;
+	background: url(../imagenes/fondo6.jpg);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../imagenes/fondo6.jpg)no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Cambia esto a align-items: flex-start; */
+    margin-top: 100px; /* Agrega un margen superior para separar el contenido del encabezado */
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    transition: 0.6s;
+}
+header .brand{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+header .brand img{
+    width: 70px;
+}
+
+.form_box {
+    width: 300px;
+    padding: 10px;
+    background: rgba(50, 100, 109, 0.8); /* Agrega un fondo con opacidad */
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+.form_title {
+	color: #fffefe;
+	text-transform: uppercase;
+	font-weight: 500; 
+}
+
+.form_box input[type="text"], input[type="password"], input[type="submit"], input[type="email"] 
+{
+	border: 0;
+	background:#fff;
+	display: block;
+	margin: auto;
+	padding: 14px, 10;
+	text-align: center;
+	border: 2px solid #335c78; 
+	width: 200px;
+	height: 40px;
+	outline: none;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+.form_box input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus
+{
+	width: 280px;
+	border-color: rgb(161, 194, 226);
+	
+}
+
+.form_box input[type="submit"] 
+{
+	border: 0;
+	background: #5696a3; 
+	cursor: pointer;
+	border: 2px solid #b8ebc5;
+}
+
+.form_box input[type="submit"]:hover 
+{
+	background: #96eff8;
+}
+#mensaje {
+	display: inline;
+	color: #d22424; 
+}
+.regresar-link {
+    position: fixed;
+    bottom: 1; /* Ajusta el valor según tu preferencia */
+    right: 1; /* Ajusta el valor según tu preferencia */
+    z-index: auto; /* Ajusta el valor si necesitas que esté por encima de otros elementos */
+}
+/*.registro{
+	border: 0;
+	background: none;
+	display: block;
+	margin: auto;
+	padding: 14px, 10;
+	text-align: center;
+	border: 2px solid #000000; 
+	width: 200px;
+	height: 40px;
+	outline: none;
+	color: rgb(255, 251, 251);
+	border-radius: 24px;
+	transition: 0.25s;
+
+}*/

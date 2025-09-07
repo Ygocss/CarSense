@@ -1,0 +1,61 @@
+body {
+    color: white;
+    background-image: url("./imagenes/fondo10.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.alerta {
+    color: red;
+    font-size: 20px;
+}
+#mensaje {
+    float: center;
+    font-size: 20px;
+}
+
+.login {
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.1);
+    margin-top: 150px;
+    margin-left: 400px;
+    width: 500px;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.botonentrar {
+    background: black;
+    cursor: pointer;
+    border-color: aliceblue;
+    padding: 16p, 32px;
+    color: white;
+    font-size: 24px;
+    font-family: italic;
+    position: relative;
+    border-radius: 8px;
+}    
+input{
+    height: 30px;
+    background:white;
+    cursor: pointer;
+    border-color: black;
+    font-size: 16px;
+    font-family: italic;
+    position: relative;
+    border-radius: 5px;
+}
+
+.registro{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+
+}
+
+h1{
+    margin:auto;
+}
